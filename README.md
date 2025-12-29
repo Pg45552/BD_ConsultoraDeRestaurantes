@@ -95,5 +95,5 @@ Ejemplo:
 - Proyecto con fines educativos.
 
 ## Visualizaciones Power BI
-- ![Overview Miscelaneo] (PowerBI/Overviews/OverviewMiscelaneo.png)
-- ![Overview Tiempo] (PowerBI/Overviews/OverviewTiempo.png)
+- ![Overview Miscelaneo](PowerBI/Overviews/OverviewMiscelaneo.png)
+- ![Overview Tiempo](PowerBI/Overviews/OverviewTiempo.png)

@@ -17,16 +17,16 @@ Proyecto académico de Base de Datos Relacional desarrollado en SQL Server 2014,
 - Script SQL completo (DDL + DML)
 
 **Estructura de la Base de Datos** :
-Entidades principales:
-- Distrito
-- Cliente
-- Restaurante
-- Plato
-- Menu
-- Estado
-- Consultas
-- Telefonos_Cliente
-- Telefonos_Rest
+- Entidades principales:
+  - Distrito
+  - Cliente
+  - Restaurante
+  - Plato
+  - Menu
+  - Estado
+  - Consultas
+  - Telefonos_Cliente
+  - Telefonos_Rest
 
 **Llaves primarias y foráneas**
 - Uso de PRIMARY KEY en todas las tablas
@@ -40,19 +40,18 @@ Ejemplo conceptual:
 - Las Consultas son históricas y no se eliminan automáticamente
 
 **Reglas de negocio implementadas** :
-ON DELETE / ON UPDATE
-Se definieron reglas explícitas para cada relación, por ejemplo:
-- Eliminación en cascada para datos dependientes (menús, teléfonos)
-- Protección de datos históricos (consultas)
+- ON DELETE / ON UPDATE: Se definieron reglas explícitas para cada relación, por ejemplo:
+  - Eliminación en cascada para datos dependientes (menús, teléfonos)
+  - Protección de datos históricos (consultas)
 
 **Check Constraints** :
-Se aplicaron CHECK CONSTRAINTS para validar datos:
-- RUC solo numérico
-- DNI con longitud fija
-- Precios mayores a cero
-- Validación de formatos básicos
-Ejemplo:
-  CHECK (RUC_Rest NOT LIKE '%[^0-9]%')
+- Se aplicaron CHECK CONSTRAINTS para validar datos:
+  - RUC solo numérico
+  - DNI con longitud fija
+  - Precios mayores a cero
+  - Validación de formatos básicos
+  Ejemplo:
+    CHECK (RUC_Rest NOT LIKE '%[^0-9]%')
 
 **Índices**
 - Índices implícitos por claves primarias
@@ -79,11 +78,11 @@ Ejemplo:
 - Eliminar registros de forma controlada
 
 **Estructura del repositorio**
-- BD_ConsultoraDeRestaurantes/
-  -│
-  -├── Script_BD_Proyecto.sql
-  -├── Informe_Final_BD.docx
-  -└── README.md
+- BD_ConsultoraDeRestaurantes
+  - Script_BD_Proyecto.sql
+  - Informe_Final_BD.docx
+  - PowerBI
+  - README.md
 
 **Contexto académico**
 - Proyecto desarrollado como parte del curso de Base de Datos, aplicando:
@@ -94,3 +93,7 @@ Ejemplo:
 
 **Licencia**
 - Proyecto con fines educativos.
+
+## Visualizaciones Power BI
+- ![Overview Miscelaneo] (PowerBI/Overviews/OverviewMiscelaneo.png)
+- ![Overview Tiempo] (PowerBI/Overviews/OverviewTiempo.png)

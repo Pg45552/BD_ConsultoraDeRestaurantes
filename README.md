@@ -16,7 +16,7 @@ Proyecto académico de Base de Datos Relacional desarrollado en SQL Server 2014,
 - Modelo relacional normalizado
 - Script SQL completo (DDL + DML)
 
-**Estructura de la Base de Datos**
+**Estructura de la Base de Datos** :
 Entidades principales:
 - Distrito
 - Cliente
@@ -39,13 +39,13 @@ Ejemplo conceptual:
 - Un Menú depende de Plato y Restaurante
 - Las Consultas son históricas y no se eliminan automáticamente
 
-**Reglas de negocio implementadas**
+**Reglas de negocio implementadas** :
 ON DELETE / ON UPDATE
 Se definieron reglas explícitas para cada relación, por ejemplo:
 - Eliminación en cascada para datos dependientes (menús, teléfonos)
 - Protección de datos históricos (consultas)
 
-**Check Constraints**
+**Check Constraints** :
 Se aplicaron CHECK CONSTRAINTS para validar datos:
 - RUC solo numérico
 - DNI con longitud fija
@@ -79,11 +79,11 @@ Ejemplo:
 - Eliminar registros de forma controlada
 
 **Estructura del repositorio**
-BD_ConsultoraDeRestaurantes/
-│
-├── Script_BD_Proyecto.sql
-├── Informe_Final_BD.docx
-└── README.md
+- BD_ConsultoraDeRestaurantes/
+  -│
+  -├── Script_BD_Proyecto.sql
+  -├── Informe_Final_BD.docx
+  -└── README.md
 
 **Contexto académico**
 - Proyecto desarrollado como parte del curso de Base de Datos, aplicando:

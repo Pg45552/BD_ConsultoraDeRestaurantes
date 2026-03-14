@@ -1,8 +1,8 @@
-# BD_ConsultoraDeRestaurantes
+## BD_ConsultoraDeRestaurantes
 Base de datos relacional para una consultora de restaurantes desarrollada en SQL Server 2014, incluye modelo lógico, script SQL e informe técnico.
 Proyecto académico de Base de Datos Relacional desarrollado en SQL Server 2014, orientado a la gestión y consulta de información sobre restaurantes, clientes, platos y consultas históricas, aplicando buenas prácticas de modelado, integridad y normalización.
 
-**Objetivo del proyecto**
+# Objetivo del proyecto
 - Diseñar e implementar una base de datos relacional que permita:
 - Registrar restaurantes y su ubicación
 - Gestionar clientes y sus datos de contacto
@@ -10,13 +10,13 @@ Proyecto académico de Base de Datos Relacional desarrollado en SQL Server 2014,
 - Almacenar consultas realizadas por los clientes (históricas)
 - Garantizar integridad referencial y consistencia de datos
 
-**Tecnologías utilizadas**
+# Tecnologías utilizadas
 - SQL Server 2014
 - SQL Server Management Studio (SSMS)
 - Modelo relacional normalizado
 - Script SQL completo (DDL + DML)
 
-**Estructura de la Base de Datos** :
+# Estructura de la Base de Datos :
 - Entidades principales:
   - Distrito
   - Cliente
@@ -39,12 +39,12 @@ Ejemplo conceptual:
 - Un Menú depende de Plato y Restaurante
 - Las Consultas son históricas y no se eliminan automáticamente
 
-**Reglas de negocio implementadas** :
+# Reglas de negocio implementadas
 - ON DELETE / ON UPDATE: Se definieron reglas explícitas para cada relación, por ejemplo:
   - Eliminación en cascada para datos dependientes (menús, teléfonos)
   - Protección de datos históricos (consultas)
 
-**Check Constraints** :
+# Check Constraints
 - Se aplicaron CHECK CONSTRAINTS para validar datos:
   - RUC solo numérico
   - DNI con longitud fija
@@ -53,45 +53,45 @@ Ejemplo conceptual:
   Ejemplo:
     CHECK (RUC_Rest NOT LIKE '%[^0-9]%')
 
-**Índices**
+# Índices
 - Índices implícitos por claves primarias
 - Optimización de búsquedas frecuentes
 - Mejora del rendimiento en consultas por cliente, restaurante y plato
 
-**Columnas IDENTITY**
+# Columnas IDENTITY
 - Uso de IDENTITY(1,1) para claves autonuméricas
 - Evita inserciones manuales erróneas
 - Asegura unicidad y orden lógico
 Ejemplo:
   ID_Consulta INT IDENTITY(1,1)
 
-**Datos de prueba**
+# Datos de prueba
 - Inserción ordenada respetando dependencias
 - Fechas en formato compatible con SQL Server
 - Datos realistas para validación funcional
 
-**Stored Procedures**
+# Stored Procedures
 - Se implementaron procedimientos almacenados para:
 - Insertar registros
 - Actualizar datos de clientes
 - Buscar información por distintos criterios
 - Eliminar registros de forma controlada
 
-**Estructura del repositorio**
+# Estructura del repositorio
 - BD_ConsultoraDeRestaurantes
   - Script_BD_Proyecto.sql
   - Informe_Final_BD.docx
   - PowerBI
   - README.md
 
-**Contexto académico**
+# Contexto académico
 - Proyecto desarrollado como parte del curso de Base de Datos, aplicando:
 - Modelo relacional
 - Integridad referencial
 - Buenas prácticas de diseño
 - Documentación técnica
 
-**Licencia**
+# Licencia
 - Proyecto con fines educativos.
 
 ## Visualizaciones Power BI
